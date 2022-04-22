@@ -1,0 +1,9 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+public class BlogPost {
+	
+	private Long id;
+	private String title;
+	private String author;
+	private String blogEntry;
+}

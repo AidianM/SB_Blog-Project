@@ -1,0 +1,33 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BlogPostController {
+	
+	//Tell Spring Boot to set this automatically via INJECTION (Autowired)
+	@Autowired
+	private BlogPostRepository blogPostRepository;
+	
+	@GetMapping(value="/")
+	public String index(BlogPost blogPost) { //model lets us access object via Thymeleaf key:value
+		
+//		BlogPost blogPost = new BlogPost(); 
+		//using the variable input auto-instantiates this for us
+		
+		blogPost.setAuthor("Scott Dossey"); //set default author
+		
+//		model.addAttribute("blogPost", blogPost);
+		// re: Model model
+		//with the parameter blogPost, this also gets handled for us
+		return "blogpost/index";
+		
+	}
+	
+	@PostMapping(value="/")
+	
+	
+}

@@ -1,0 +1,6 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+
+public interface BlogPostRepository extends CrudRepository<BlogPost, Long> {
+
+}

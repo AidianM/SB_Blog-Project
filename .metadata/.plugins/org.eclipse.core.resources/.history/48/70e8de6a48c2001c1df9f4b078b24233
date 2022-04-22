@@ -1,0 +1,13 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository //not critical, but makes it easier to auto-instantiate/markup
+public interface BlogPostRepository extends CrudRepository<BlogPost, Long> {
+	//first parameter is the type to be stored in database, second param
+	//is type used for primary key
+	
+	
+	
+}

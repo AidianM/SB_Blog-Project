@@ -1,0 +1,10 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface BlogPostRepository extends CrudRepository<BlogPost, Long> {
+	//first parameter is the type to be stored in database, second param
+	//is type used for primary key
+	
+	
+}

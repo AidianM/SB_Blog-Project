@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Blog Site</title>
+	<meta http equiv = "Content-Type" content = "text/html; charset=UTF-8"/>
+	</head>
+	
+	<body>
+		<h1>welcome to our Blog Post site!</h1>
+		<h3>Check out our blogs</h3>
+	</body>
+</html>

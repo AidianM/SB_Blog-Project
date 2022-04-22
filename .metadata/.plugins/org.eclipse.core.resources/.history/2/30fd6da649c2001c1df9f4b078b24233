@@ -1,0 +1,24 @@
+package com.techtalentsouth.techtalentblog.blogposts;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class BlogPostController {
+	
+	//Tell Spring Boot to set this automatically via INJECTION (Autowired)
+	@Autowired
+	private BlogPostRepository blogPostRepository;
+	
+	@GetMapping(value="/")
+	public String index(Model model) { //model lets us access object via Thymeleaf key:value
+		
+		BlogPost blogPost = new BlogPost();
+		
+		model.addAttribute("blogPost", blogPost);
+		return "blogpost/index";
+		
+	}
+	
+}

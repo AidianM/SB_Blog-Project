@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"> 
+<!-- lets us name the xml name space-->
+	<head>
+		<title>Blog Site</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	</head>
+	
+	<body>
+		<h1>Welcome to our Blog Post site!</h1>
+		<h3>Check out our blogs</h3>
+	</body>
+</html>
